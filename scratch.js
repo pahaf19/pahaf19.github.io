@@ -12,13 +12,13 @@
       brush        = new Image();
       
   // base64 Workaround because Same-Origin-Policy
-  image.src = '/Users/phaffmans/Documents/Personal/Projects/WeddingWebsite/output.png'
+  image.src = './gold_heart.png'
   image.onload = function() {
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
     // Show the form when Image is loaded.
     document.querySelectorAll('.form')[0].style.visibility = 'visible';
   };
-  brush.src = '/Users/phaffmans/Documents/Personal/Projects/WeddingWebsite/brush.png'
+  brush.src = './brush.png'
   
   canvas.addEventListener('mousedown', handleMouseDown, false);
   canvas.addEventListener('touchstart', handleMouseDown, false);
@@ -96,8 +96,8 @@
         x, y;
     
     for (var i = 0; i < dist; i++) {
-      x = lastPoint.x + (Math.sin(angle) * i) - 50;
-      y = lastPoint.y + (Math.cos(angle) * i) - 50;
+      x = lastPoint.x + (Math.sin(angle) * i) - 10;
+      y = lastPoint.y + (Math.cos(angle) * i) - 10;
       ctx.globalCompositeOperation = 'destination-out';
       ctx.drawImage(brush, x, y);
     //   ctx.beginPath();
