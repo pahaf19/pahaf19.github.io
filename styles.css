@@ -1,0 +1,103 @@
+:root {
+  --pink: #bb8e94;
+  --pink-dark: #c6939a;
+  --tape-gray: #dbd8be;
+  --tape-edge-gray: #b7b49d;
+  --transparent: rgba(255, 255, 255, 0);
+  --image-height: 100px;
+  --image-width: 300px;
+  --red: #C11227;
+}
+
+.symbol{
+margin-left: auto;
+margin-right: auto;
+width:50px;
+height:50px;
+}
+
+.scratch{
+  text-align: center;
+  color:var(--red);
+  font-family: "alegreya", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+.shirley_pat{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+h1,h2,h3,p{
+  text-align: center;
+  color: var(--red);
+  font-family: "alegreya", sans-serif;
+} 
+
+
+body {
+  background: #F5E7DE;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  width: var(--image-width);
+  height: var(--image-height);
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  -o-user-select: none;
+  user-select: none;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+}
+
+.center {
+  height: var(--image-height);
+  text-align: center;
+}
+
+/* If the text has multiple lines, add the following: */
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.card-shadow {
+  background-color: #fff;
+  box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, .25);
+  height: 1px;
+  margin: -1px auto 0;
+  width: var(--image-width);
+  z-index: -1;
+}
+
+.hint{
+  text-align: center;
+  color: rgb(172, 172, 172);
+  font-family: "alegreya", sans-serif;
+}
