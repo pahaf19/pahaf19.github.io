@@ -83,7 +83,9 @@ body {
 
 .center_lower {
   text-align: center;
-margin-top: 10px;
+  margin-top: 10px;
+  padding-left: auto;
+  padding-right: auto;
 }
 /* If the text has multiple lines, add the following: */
 span {
