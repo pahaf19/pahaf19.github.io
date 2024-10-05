@@ -80,6 +80,11 @@ body {
   text-align: center;
 }
 
+
+.center_lower {
+  text-align: center;
+margin-top: 10px;
+}
 /* If the text has multiple lines, add the following: */
 span {
   display: inline-block;
